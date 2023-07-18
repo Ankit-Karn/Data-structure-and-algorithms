@@ -22,7 +22,7 @@
 // kadane's algorithm 
 const result = (arr) =>{
     let sum = 0
-    let max = arr[0]
+    let max = 0
 
     for(let i=0; i<arr.length; i++){
         sum += arr[i]; // everytime we get a new element we add it into sum
@@ -33,6 +33,6 @@ const result = (arr) =>{
     }
     return max;
 }
-var array = [-2,1,-3,4,-1,2,1,-5,4]
+var array = [-2,-3,4,-1,-2,1,5,-3]
 var output = result(array);
 console.log(output)
